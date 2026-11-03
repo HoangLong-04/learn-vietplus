@@ -3,10 +3,10 @@ import AppView from "../../components/common/AppView";
 import AppText from "../../components/common/AppText";
 import { StyleSheet } from "react-native";
 
-export default function UserProfileScreen({ route }: {route: any}) {
+export default function UserProfileScreen({ route }: { route: any }) {
   const { userId } = route.params;
   return (
-    <AppView style={styles}>
+    <AppView style={styles.container}>
       <AppText>{userId}</AppText>
     </AppView>
   );
@@ -14,6 +14,6 @@ export default function UserProfileScreen({ route }: {route: any}) {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16
-  }
-})
+    padding: 16,
+  },
+});
